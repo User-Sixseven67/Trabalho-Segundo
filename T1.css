@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+background-color: #0A0E17;
+font-family:Arial, Helvetica, sans-serif ;
+display: flex;
+flex-direction: column;
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+}
+/* Cabeçalho*/
+
+
+header {
+    background-color: #07080A;
+    padding: auto;
+    text-align: center;
+    color: #fff;
+    img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+   
+    
+    a{
+    text-decoration: none;
+    color: #FFFFF0;
+    font-size: 18px;
+    padding: auto;
+
+    }
+
+    a:hover{
+    color: grey;
+    }
+
+}
+
+
+.logo{
+    margin: 0 auto;
+}
+
+  
+
+/*games*/
+
+main{
+    color: white;
+}
+
+
+.jogos{
+padding: 20px;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.pag-index{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 5px;
+border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #20232A;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    
+    p{
+        background-color: green;
+        padding-bottom: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+}
+.pag-index:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.pagina-jogo {
+    width: 90%;
+    max-width: 1400px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.imagem-jogo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #25334d;
+    box-shadow: 0 10px 40px #00000040;
+}
+
+
+
+.informacoes h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 5px 0 12px;
+}
+
+.desenvolvedora {
+    color: #a78bfa;
+}
+
+.avaliacao {
+    color: #facc15;
+    margin-bottom: 20px;
+}
+
+.avaliacao span {
+    color: #aebbd1;
+    font-size: 14px;
+}
+
+.descricao {
+    color: #c5cee0;
+    margin-bottom: 22px;
+}
+
+.recursos {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.recursos li {
+    margin-bottom: 10px;
+    color: #dce4f5;
+}
+
+
+
+
+.caixa-compra {
+    max-width: 420px;
+    padding: 25px;
+    background: #101a2d;
+    border: 1px solid #293750;
+    border-radius: 14px;
+}
+
+.desconto {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #166534;
+    color: #bbf7d0;
+    border-radius: 5px;
+}
+
+.preco-antigo {
+    margin-top: 12px;
+    color: #8997b1;
+    text-decoration: line-through;
+}
+
+.caixa-compra h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+
+
+
+.botao-comprar,
+.botao-lista {
+    width: 100%;
+    padding: 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-comprar {
+    background: blue;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.botao-comprar:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px #7c3aed50;
+}
+
+.botao-lista {
+    margin-top: 12px;
+    background: transparent;
+    color: white;
+    border: 1px solid #465575;
+}
+
+.botao-lista:hover {
+    background: #1c2940;
+}
+
+
+
+
+.detalhes {
+    width: 90%;
+    max-width: 1400px;
+    margin: 35px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    background: #0e1728;
+    border: 1px solid #25334d;
+    border-radius: 12px;
+}
+
+.detalhes h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.detalhes p {
+    color: #aebbd1;
+}
+
+
+
+
+.sobre-jogo {
+    width: 90%;
+    max-width: 1400px;
+    margin: 45px auto;
+}
+
+.sobre-jogo h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.sobre-jogo p {
+    max-width: 850px;
+    color: #c5cee0;
+}
+
+
+/* Resto*/
+
+@media(min-width: 1024px){
+footer{
+    color: white;
+    background-color: #000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+}
+}
+
+/*Suporte fixo ou movel? */
+.suporte {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/*aSai ou Açai? */
+.Supo {
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.Supo h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.Supo label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-suave);
+}
+
+.Supo input,
+.Supo select,
+.Supo textarea {
+    width: 100%;
+    padding: 11px 14px;
+    background: var(--fundo);
+    color: var(--texto);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    font: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.Supo textarea {
+    min-height: 130px;
+}
+
+.Supo input:focus,
+.Supo select:focus,
+.Supo textarea:focus {
+    outline: none;
+    
+}
+
+.Supo ::placeholder {
+    color: #5d6372;
+}
+
+.Supo small {
+    display: block; 
+    text-align: right;
+    margin-top: 4px;
+    font-size: 0.8rem;
+}
+
+.Supo button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
+    background: var(--destaque);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.Supo button:hover {
+    background: var(--destaque-hover);
+    background:green;
+}
+
+.Supo button:active {
+    transform: scale(0.98);
+}
+
+/* Redes Sociais ou Dopamina barata */
+.RS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.RS h2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.RS article {
+    max-width: 200px;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.RS article:hover {
+    transform: translateY(-4px);
+}
+
+.RS h4 {
+    margin: 0 0 10px;
+}
+
+.RS img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+/* Responsavel ou Irresposavel?*/
+
+/* SLa */
+@media(min-width: 1024px){
+footer{
+    color: white;
+    background-color: #000;
+       position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+}
+}
+
+@media(max-width: 640px){
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .pagina-jogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .imagem-jogo {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .informacoes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .informacoes h1 {
+        font-size: 1.6rem;
+    }
+
+    .recursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .caixa-compra {
+        padding: 16px;
+    }
+
+    .detalhes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .sobre-jogo {
+        padding: 16px;
+    }
+
+footer{
+       color: white;
+        background-color: #000;
+         position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+}
+}
+
+/*IPAD PRO 13 vulgo estraga sonho */
+@media (min-width: 1024px) and (max-width: 1100px) {
+    footer {
+        color: white;
+        background-color: #000;
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+/*IPAD mini vulgo estraga sonho */
+@media (min-width: 768px) and (max-width: 1100px) {
+    footer {
+        color: white;
+        background-color: #000;
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+
+/*sol pro vulgo estraga sonho */
+@media (min-width: 1280px) and (max-width: 1300px){
+footer{  
+        color: white;
+        background-color: #000;
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+} 
+}
